@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+#weather-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Alinha os cards horizontalmente */
+}
+
+.weather-card-container {
+    width: calc(50% - 20px); /* Define a largura de cada card */
+    margin-bottom: 20px; /* Adiciona margem inferior para separar as linhas */
+    box-shadow: 5px 8px 18px 5px rgba(0,0,0,0.2);
+    border-radius: 25px;
+}
+
+.weather-image-container {
+    position: relative;
+    border-radius: 25px;
+}
+
+.weather-card-container:nth-child(-n+2) {
+    margin-top: 20px; /* Adiciona margem apenas para os dois primeiros cards */
+}
+
+.weather-image-container img {
+    border-radius: 25px; /* Adiciona borda arredondada a todas as imagens dentro do contêiner de imagem */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Define uma altura mínima para ocupar toda a tela */
+    margin: 0; /* Remove margens padrão do body */
+}
+
+.img1 {
+    border-radius: 25px;
+}
+
+.weather-info-box {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    padding: 5px;
+    font-size: 50px;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.404);
+    border-radius: 25px;
+    z-index: 1;
+    margin-bottom: 15px;
+}
+
+.weather-forecast-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.weather-day-box {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
